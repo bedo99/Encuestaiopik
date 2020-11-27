@@ -1,4 +1,4 @@
-let baseURL = "http://localhost:5000/api/";
+let baseURL = "http://6f120663acb4.sn.mynetname.net:3000/api/";
 let sizeQuestions = 0;
 let axiosService = axios.create({
   baseURL: baseURL,
