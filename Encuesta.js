@@ -31,7 +31,11 @@ window.onload = () => {
 function sendAnswer(idAnswer, index) {
   let answerTxt = document.getElementById(`exampleFormControlTextarea${index}`).value.trim();
   if(answerTxt == null || answerTxt == '') {
-    alert("vacio");
+    Swal.fire({
+      icon: 'warning',
+      title: 'Respuesta vacia',
+      text: 'Porfavor registra una respuesta!!',
+    })
     return;
   }
   axiosService
