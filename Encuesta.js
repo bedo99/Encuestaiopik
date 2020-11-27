@@ -45,18 +45,12 @@ function sendAnswer(idAnswer, index) {
 
 //Cambiar Pregunta
 function nextQuestion(question_number) {
-  //get the last question number (the argument passed minus 1!)
   var current_question_number = question_number - 1;
-  //turn both question number vars into strings
   var question_number = question_number.toString();
   var current_question_number = current_question_number.toString();
-  //get the next question div element (concatenate next q number onto to 'question-')
   var el = document.getElementById('question-'+question_number);
-  //get the current question div element
   var el2 = document.getElementById('question-'+current_question_number);  
-  //display next question
   el.style.display = "block";
-  //hide current question
   el2.style.display = "none";
 }
 //Barra de Progreso
